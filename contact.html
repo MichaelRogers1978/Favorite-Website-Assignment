@@ -8,24 +8,34 @@
     <!--Bootstrap CSS via CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Navbar-->
+
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Menu</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="catagories.html">Catagories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catagories.html">Catagories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-<!--Hero Image-->
+
+    <!--Hero Image-->
+
     <div class="p-5 text-center bg-image" style="
 background-image: url('https://cdn.pixabay.com/photo/2021/01/21/09/11/mountains-5936682_1280.jpg'); height: 400px;">
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.0);">
@@ -40,11 +50,37 @@ background-image: url('https://cdn.pixabay.com/photo/2021/01/21/09/11/mountains-
 </head>
 
 <body>
+
+    <!--Modal-->
+
+    <div class="container text-center mt-3">
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal">Explore</button>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Benefits of Getting Outdoors</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Spending time in nature offers numerous benefits for emotional, mental and
+                    physical
+                    well-being, including reduced stress, improved mood, enhanced focus, and a stronger immune system,
+                    all while promoting a sense of calm and connection to what nature has to offer in this beautiful
+                    world we call home. </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container text-center mt-5">
         <h1 class="text-center mt-4">Get in touch with us</h1>
         <p class="lead"></p>
     </div>
-<!--Image-->
+
+    <!--Image-->
+
     <div class="container-fluid mt-5">
         <div class="row justify-content-center">
             <div class="col-12">
@@ -53,7 +89,9 @@ background-image: url('https://cdn.pixabay.com/photo/2021/01/21/09/11/mountains-
             </div>
         </div>
     </div>
-<!--Forms-->
+
+    <!--Forms-->
+    
     <form>
         <div class="container-fluid mb-1">
             <label for="Name" class="form-label">Enter Your Name</label>
@@ -69,7 +107,7 @@ background-image: url('https://cdn.pixabay.com/photo/2021/01/21/09/11/mountains-
             <label for="shipping address" class="form-label">Enter Your shipping address (optional)</label>
             <input type="text" class="form-control" id="shipping address"
                 placeholder="ex. 1234 This Lane, City, State, Zip">
-                <div id="email" class="form-text">We'll never share your address with anyone.</div>
+            <div id="email" class="form-text">We'll never share your address with anyone.</div>
         </div>
         <div class="container text-center md-5">
             <button type="submit" class="btn btn-light btn-lg">Submit</button>

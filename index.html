@@ -13,25 +13,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-
 </head>
+
 <!--Navbar-->
+
 <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="catagories.html">Catagories</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catagories.html">Catagories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
             </ul>
-
         </div>
     </div>
 </nav>
+
+<!--Hero-->
+
 <div class="p-5 text-center bg-image"
     style="background-image: url('https://cdn.pixabay.com/photo/2019/10/14/15/27/mountains-4549189_1280.jpg'); height: 400px;">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.1);">
@@ -48,6 +57,7 @@
     <p class="lead"></p>
     <button class="btn btn-light">Shop Now</button>
 </div>
+
 <!--Carousel-->
 
 <body>
@@ -99,23 +109,69 @@
 <!--Accordian-->
 
 <body>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Hiking
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <strong>Fun facts about Hiking:</strong> Hiking was the inspiration for skiing and snowshoeing.
+                    Bears basically spend their entire lives hiking. The word "hiking" likely originated from the
+                    English
+                    dialectal term "hyke," meaning "to walk vigorously," and is thought to be related to the verb
+                    "hitch," which meant "to move, jerk, stir". The activity also can reduce anxiety and depression,
+                    plus improve cognition, memory function, and problem-solving skills.
+                </div>
+            </div>
 
-    <script>
-        <button class="accordion">Getting out in Nature</button>
-        <div class="panel">
-            <p>Nature can be a beautiful, wonderous thing.</p>
         </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Camping
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <strong>Fun facts about Camping:</strong> Camping can teach valuable skills, such as cooking over a
+                    campfire, building shelters, and navigating outdoors. 33% of campers always camp with pets. While
+                    camping as a recreational activity has roots in various cultures and time periods, Thomas Hiram
+                    Holding, a British tailor, is often credited with popularizing modern recreational camping with his
+                    1908 book "The Camper's Handbook".
+                </div>
+            </div>
 
-        <button class="accordion">Fishing</button>
-        <div class="panel">
-            <p>Going fishing is actually a very relaxing sport.</p>
         </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Fishing
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <strong>Fun facts about Fishing:</strong> Fishing can be traced back to around 40,000 years ago, and
+                    there are over 20,000 known fish species. The first fishing reels were invented in 4th century
+                    China. Oldest fish hook that we found until now is made of shell and is between 16,000 and 23,000 years old.
+                </div>
+            </div>
 
-        <button class="accordion">Hiking</button>
-        <div class="panel">
-            <p>Explore with hiking</p>
         </div>
-    </script>
+    </div>
+
+
 
 </body>
 

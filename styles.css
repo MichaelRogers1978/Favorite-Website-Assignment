@@ -1,21 +1,8 @@
 body {
   background-color: rgb(61, 158, 82)
 }
-.accordion {
-  background-color: #3b5341;
-  color: #e7dcdc;
-  cursor: pointer;
-  padding: 16px;
-  width: 50%;
-  text-align: center;
-  border: 1;
-  outline: 94;
-  transition: 0.5s;
-}
 
-.active, .accordion:hover {
-  background-color: #4c9c64;
-}
+
 
 .panel {
   padding: 0 18px;
